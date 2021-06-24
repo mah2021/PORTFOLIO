@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" >
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" ></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="css/lightbox.min.css" rel="stylesheet" />
+
+<script  type="text/javascript"  src="js/lightbox-plus-jquery.min.js"></script>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/respansive.css">
+<link rel="stylesheet" href="css/skins/color.css">
+  <title>Mahboubeh Kianifard</title>
+</head>
+<body>
+  <!--Header   start -->  
+  <header class="header">
+    <div class="container-fluid">
+
+      <div class="navbar">
+        <div class="logo col"> <a href="index.html">MK</a></div>
+      <nav>
+        <ul id="MenuItem">
+       
+            
+            <li> <a href="service.html" class="link-item btn-2 outer-shadow hover-in-shadow">services</a></li>
+            
+            <li> <a href="contact.html" class="link-item btn-2 outer-shadow hover-in-shadow">contact</a></li>
+            <li> <a href="portfolio.html" class="link-item btn-2 outer-shadow hover-in-shadow">portfolio</a></li>
+             <li> <a href="about.html" class="llink-item btn-2 outer-shadow hover-in-shadow">About</a></li> 
+             <li> <a href="index.html" class="link-item btn-1 outer-shadow hover-in-shadow active">Home</a></li>
+        </ul>
+    
+      </nav>
+     
+      <img src="images/menu.png"  class="menu-icon" onclick="menutoggle()">
+    </div>
+    </div>
+    </header>
+   
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+   <!--Header   end -->  
+   <!--contact us start-->
+<section class="contact-section section" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="section-title">
+          <h2 data-heading="contact">Get In Touch</h2>
+        </div>
+      </div>
+      <div class="row">
+        <!--contact item start-->
+        <div class="contact-item">
+          <div class="contact-item-inner outer-shadow">
+            <i class="fa fa-phone"></i>
+            <span>Phone</span>
+            <p>+36 70322 7635</p>
+          </div>
+        </div>
+         <!--contact item end-->
+          <!---contact item start-->
+        <div class="contact-item">
+          <div class="contact-item-inner outer-shadow">
+            <i class="fa fa-map"></i>
+            <span>Address</span>
+            <p>Budapest-Hungary</p>
+          </div>
+        </div>
+         <!--contact item end-->
+          <!--contact item start-->
+        <div class="contact-item">
+          <div class="contact-item-inner outer-shadow">
+            <i class="fa fa-envelope"></i>
+            <span>Email</span>
+            <p>mahdeveloper2021@gmail.com</p>
+          </div>
+        </div>
+         <!--contact item end-->
+      </div>
+      <div class="row">
+        <div class="contact-form">
+          <form action="check-contact.php" method="post">
+            <div class="row">
+              <div class="w-50">
+                
+                 <div class="input-group outer-shadow "> 
+                  <input type="text" name="name" placeholder="Name"  class="input-control">
+                      </div> 
+                      <div class="input-group outer-shadow ">
+                        <input type="text" name="email" placeholder="Email"  class="input-control">
+                            </div>
+                            <div class="input-group outer-shadow">
+                              <input type="text" name="title" placeholder="Subject"  class="input-control">
+                                  </div>
+              </div>
+              <div class="w-50">
+                <div class="input-group outer-shadow">
+                 <textarea  class="input-control" name="text" placeholder="Message"></textarea>
+                      </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="submit-btn">
+                <button type="submit" class="btn-1 outer-shadow hover-in-shadow" name="btn"  id="btn">Send Message</button>
+              </div>
+  
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--contact us end-->
+  <script>
+    var MenuItem=document.getElementById("MenuItem");
+    MenuItem.style.maxHeight="0px";
+   function menutoggle(){
+       if(MenuItem.style.maxHeight=="0px"){
+        MenuItem.style.maxHeight="500px";
+   }
+   else{
+    MenuItem.style.maxHeight="0px";
+   }
+  }
+  </script>
+  
+  </body>
+  </html>
